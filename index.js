@@ -67,7 +67,7 @@ app.post("/login/main", async (req, res) => {
           console.log(`Password match: ${user}`); // Debugging
       } else {
           // User not found
-          res.send("User not found");
+          res.render("notfound.ejs")
       }
   } catch (error) {
       // Handle any other errors

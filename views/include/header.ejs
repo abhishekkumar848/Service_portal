@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <style>
+        .body1 {
+            font-family: 'Arial', sans-serif;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f2f4f6;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        header {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+           
+
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #343a40; /* Dark gray */
+            
+            
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #495057; /* Medium gray */
+            font-weight: 600;
+            font-family: cursive;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff007f; /* Pink on hover */
+        }
+
+        .start-btn {
+            background-color: #ff007f; /* Pink background */
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px; /* Rounded edges */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .start-btn:hover {
+            background-color: #e6006b; /* Darker pink on hover */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #e9ecef, #f8f9fa); /* Soft gradient */
+            color: #343a40; /* Dark gray */
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: #ffffff; /* White background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            color: #ff007f; /* Pink for headings */
+        }
+
+        .learn-btn {
+            background-color: #007bff; /* Blue background */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px; /* Rounded edges */
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .learn-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #6c757d; /* Light gray */
+        }
+
+        .atag {
+            text-decoration: none;
+            color: white;
+        }
+
+        .imgtag {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body class="body1">
+    <header>
+        <div class="logo">App</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Generator</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <form action="/profile/view" method="get">
+                <button class="start-btn">
+                    <a href="#" class="atag">
+                        welcome
+                        <%= user.name %>
+                    </a>
+                </button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
